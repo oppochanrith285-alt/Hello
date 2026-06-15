@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel Fan Clone - Beginner Edition</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/box-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="1.css">
+</head>
+<body>
+
+  <!-- 1. NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand marvel-brand" href="#">NAK STUDIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-uppercase fw-bold">
+          <li class="nav-item"><a class="nav-link" href="NEWS.html">News</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Comic.html">Comics</a></li>
+          <li class="nav-item"><a class="nav-link" href="character.html">Characters</a></li>
+          <li class="nav-item"><a class="nav-link" href="Movie.html">Movies</a></li>
+          <li class="nav-item"><a class="nav-link" href="TVshow.html">TV Shows</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. HERO CAROUSEL BANNERS -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="./BT logo/banner1.jpg" class="d-block w-100" alt="Anti-Venom Banner">
+        <div class="carousel-caption d-none d-md-block text-start mb-4">
+          <span class="badge bg-danger mb-2">Spotlight</span>
+          <h1 class="display-5 fw-bold text-uppercase">Meet Anti-Venom, Venom's Polar Opposite</h1>
+          <a href="#" class="btn btn-danger btn-lg rounded-0 mt-2 fw-bold">READ NOW!</a>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="./BT logo/b2.jpg" class="d-block w-100" alt="Storm Banner">
+        <div class="carousel-caption d-none d-md-block text-start mb-4">
+          <span class="badge bg-danger mb-2">SPOTLIGHT</span>
+          <h1 class="display-5 fw-bold text-uppercase">Super heros who unmasked</h1>
+          <a href="#" class="btn btn-danger btn-lg rounded-0 mt-2 fw-bold">READ NOW!</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./BT logo/b3.jpg" class="d-block w-100" alt="Storm Banner">
+        <div class="carousel-caption d-none d-md-block text-start mb-4">
+          <span class="badge bg-danger mb-2">SPOTLIGHT</span>
+          <h1 class="display-5 fw-bold text-uppercase">meet genis-vel, son of mar-vell</h1>
+          <a href="#" class="btn btn-danger btn-lg rounded-0 mt-2 fw-bold">READ NOW!</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- 3. MAIN COMIC GRID SECTION -->
+  <main class="container my-5">
+    <h2 class="text-uppercase fw-bold border-bottom border-danger pb-2 mb-4">New This Week</h2>
+    
+    <!-- The Bootstrap Grid Row -->
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+      
+      <!-- Comic Card 1 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/Xmen97.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">X-Men '97 </h6>
+            <p class="card-text text-white small mb-0">2026</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comic Card 2 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/IronMan.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">Iron Man (2026) </h6>
+            <p class="card-text text-white small mb-0">2026</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comic Card 3 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/MoonKnight.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">moonknight </h6>
+            <p class="card-text text-white small mb-0">2026</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comic Card 4 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/DrStrange.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">Doctor strange(2025)</h6>
+            <p class="card-text text-white small mb-0">2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comic Card 5 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/Godzilla.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">Godzilla: Infinity Roar</h6>
+            <p class="card-text text-white small mb-0">2026</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+      
+      <!-- Comic Card 6 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/Fantastic Four.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">Fantastic four(2025)</h6>
+            <p class="card-text text-white small mb-0">2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comic Card 7 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/X-men AoR.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">X-men: Age of revelation</h6>
+            <p class="card-text text-white small mb-0">2026</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comic Card 8 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/cyclop.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">cyclops (2026)</h6>
+            <p class="card-text text-white small mb-0">2026</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comic Card 9 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/deadpool wade wilson.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">Wade Wilson:Deadpool</h6>
+            <p class="card-text text-white small mb-0">2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comic Card 10 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/rogue.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">STAR WARS:ROGUE</h6>
+            <p class="card-text text-white small mb-0">2026</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <main class="container my-5">
+    <h2 class="text-uppercase fw-bold border-bottom border-danger pb-2 mb-4">Best Selling Digital Comics</h2>
+    
+    <!-- The Bootstrap Grid Row -->
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+      
+      <!-- Comic Card 1 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <a href="comiccard.html"><img src="./BT logo/MoonKnight1.jpg" class="card-img-top" alt="Comic Cover"></a>
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">Moon Knight:Fist of Khonshu</h6>
+            <p class="card-text text-white small mb-0">2026</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comic Card 2 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/hulk.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">the immortal hulk</h6>
+            <p class="card-text text-white small mb-0">2026</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comic Card 3 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/Major X.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">Major X</h6>
+            <p class="card-text text-white small mb-0">2026</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comic Card 4 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/Hercules.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">Hercules</h6>
+            <p class="card-text text-white small mb-0">2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comic Card 5 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/Thanos.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">Thanos:The Infinity Conflict</h6>
+            <p class="card-text text-white small mb-0">2026</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+      
+      <!-- Comic Card 6 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/The hulk and the thing.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">The hulk and the thing</h6>
+            <p class="card-text text-white small mb-0">2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comic Card 7 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/thanos1.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">Thanos:The Infinity Ending</h6>
+            <p class="card-text text-white small mb-0">2026</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comic Card 8 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/killraven.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">Killraven</h6>
+            <p class="card-text text-white small mb-0">2026</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comic Card 9 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/venom.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">Venom: seed of darkness</h6>
+            <p class="card-text text-white small mb-0">2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comic Card 10 -->
+      <div class="col">
+        <div class="card h-100 text-white">
+          <img src="./BT logo/spidergeddon.jpg" class="card-img-top" alt="Comic Cover">
+          <div class="card-body p-2">
+            <h6 class="card-title text-uppercase fw-bold mb-1 text-truncate">spider-geddon</h6>
+            <p class="card-text text-white small mb-0">2026</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Load More Button Area -->
+    <div class="text-center mt-5">
+      <button class="btn btn-danger text-uppercase fw-bold px-4 py-2 rounded-0">Load More</button>
+    </div>
+  </main>
+
+  <!-- 4. FOOTER -->
+  <footer class="main-footer">
+        <div class="footer-primary">
+            
+            <!-- Logo -->
+            <div class="footer-logo">
+                <!-- Replace with your actual logo graphic if needed -->
+                <svg width="85" height="85" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="100" fill="#e62429"/>
+                    <text x="50%" y="78%" font-family="Impact, Arial Black" font-size="90" fill="#ffffff" text-anchor="middle">M</text>
+                </svg>
+            </div>
+
+            <!-- Link Column 1 -->
+            <div class="footer-nav-col">
+                <a href="#">About Marvel</a>
+                <a href="#">Help/FAQs</a>
+                <a href="#">Careers</a>
+                <a href="#">Internships</a>
+            </div>
+
+            <!-- Link Column 2 -->
+            <div class="footer-nav-col">
+                <a href="#">Advertising</a>
+                <a href="#">Disney+</a>
+                <a href="#">Marvelhq.com</a>
+                <a href="#">Redeem Digital Comics</a>
+            </div>
+
+            <!-- Promo Features -->
+            <div class="footer-promos">
+                <!-- Marvel Unlimited -->
+                <div class="promo-item">
+                    <div class="promo-icon">
+                        <!-- Placeholder using SVG, replace src with your icon asset -->
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    </div>
+                    <div class="promo-text">
+                        <h4>Marvel Unlimited</h4>
+                        <p>Access Over 30,000+ Digital Comics</p>
+                    </div>
+                </div>
+                
+                <!-- Send a Gift -->
+                <div class="promo-item">
+                    <div class="promo-icon">
+                        <!-- Placeholder using SVG, replace src with your icon asset -->
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+                    </div>
+                    <div class="promo-text">
+                        <h4>Send A Gift</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media Grid -->
+            <div class="footer-socials">
+                <h4>Follow Marvel</h4>
+                <div class="social-grid">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Tumblr"><i class="fab fa-tumblr"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Snapchat"><i class="fab fa-snapchat-ghost"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Legal Links -->
+        <div class="footer-legal">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Interest-Based Ads</a>
+            <a href="#">License Agreement</a>
+            <span class="footer-copyright">©2026 MARVEL</span>
+        </div>
+    </footer>
+
+  <!-- Bootstrap 5 Bundle with Popper JS (Required for Carousel and Navbar toggle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

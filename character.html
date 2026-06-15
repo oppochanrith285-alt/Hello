@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel Fan Clone - Beginner Edition</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/box-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="1.css">
+</head>
+<body>
+
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand marvel-brand" href="#">NAK STUDIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-uppercase fw-bold">
+          <li class="nav-item"><a class="nav-link" href="NEWS.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="Comic.html">Comics</a></li>
+          <li class="nav-item"><a class="nav-link active" href="character.html">Characters</a></li>
+          <li class="nav-item"><a class="nav-link" href="Movie.html">Movies</a></li>
+          <li class="nav-item"><a class="nav-link" href="TVshow.html">TV Shows</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. HERO CAROUSEL BANNERS -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="./BT logo/banner1.jpg" class="d-block w-100" alt="Anti-Venom Banner">
+        <div class="carousel-caption d-none d-md-block text-start mb-4">
+          <span class="badge bg-danger mb-2">Spotlight</span>
+          <h1 class="display-5 fw-bold text-uppercase">Meet Anti-Venom, Venom's Polar Opposite</h1>
+          <a href="#" class="btn btn-danger btn-lg rounded-0 mt-2 fw-bold">READ NOW!</a>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="./BT logo/b2.jpg" class="d-block w-100" alt="Storm Banner">
+        <div class="carousel-caption d-none d-md-block text-start mb-4">
+          <span class="badge bg-danger mb-2">SPOTLIGHT</span>
+          <h1 class="display-5 fw-bold text-uppercase">Super heros who unmasked</h1>
+          <a href="#" class="btn btn-danger btn-lg rounded-0 mt-2 fw-bold">READ NOW!</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./BT logo/b3.jpg" class="d-block w-100" alt="Storm Banner">
+        <div class="carousel-caption d-none d-md-block text-start mb-4">
+          <span class="badge bg-danger mb-2">SPOTLIGHT</span>
+          <h1 class="display-5 fw-bold text-uppercase">meet genis-vel, son of mar-vell</h1>
+          <a href="#" class="btn btn-danger btn-lg rounded-0 mt-2 fw-bold">READ NOW!</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div> <br><br>
+<div class="container">
+        <div class="character-grid">
+            
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/tony.jpg" alt="Adaptoid" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Iron Man</div>
+                    <div class="character-real-name">Tony Stark</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/roger.jpg" alt="Administrator" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Captian America</div>
+                    <div class="character-real-name">Steve Roger</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/thor.jpg" alt="Adversary" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Thor</div>
+                    <div class="character-real-name">Thor Odinson</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/bruce.jpg" alt="Aegis" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Hulk</div>
+                    <div class="character-real-name">Bruce Banner</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/clint.jpg" alt="Aegis" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Haweye</div>
+                    <div class="character-real-name">Clint Barton</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/natasha.jpg" alt="Aero" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Black Window</div>
+                    <div class="character-real-name">Natasha Romanoff</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/wanda.jpg" alt="Aero" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Scarlet Witch</div>
+                    <div class="character-real-name">Wanda Maximoff</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/backy.jpg" alt="Aftershock" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Winter Soldier</div>
+                    <div class="character-real-name">Bucky Barnes</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/strange.jpg" alt="Agatha Harkness" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Doctor Strange</div>
+                    <div class="character-real-name">Stephen Strange</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/tchalla.jpg" alt="Aged Genghis" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Black Panther</div>
+                    <div class="character-real-name">T'Challa</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/vision.jpg" alt="Agent" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Vision</div>
+                    <div class="character-real-name">Vision</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/thanos2.jpg" alt="Agent Mobius" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Thanos</div>
+                    <div class="character-real-name">Thanos</div>
+                </div>
+            </a>
+
+        </div>
+        <div class="character-grid">
+            
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/rocket.jpg" alt="Adaptoid" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Rocket</div>
+                    <div class="character-real-name">Rocket Raccoon</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/jame.jpg" alt="Administrator" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">War Machine</div>
+                    <div class="character-real-name">James Rhodes</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/ultron.jpg" alt="Adversary" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Ultron</div>
+                    <div class="character-real-name">Ultron</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/loki.jpg" alt="Aegis" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Loki</div>
+                    <div class="character-real-name">Loki</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/shangchi.jpg" alt="Aegis" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Shang Chi</div>
+                    <div class="character-real-name">Shang Chi</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/antman.jpg" alt="Aero" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Ant Man</div>
+                    <div class="character-real-name">Scott Lang</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/sam.jpg" alt="Aero" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Falcon</div>
+                    <div class="character-real-name">Sam Wilson</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/peter parker.jpg" alt="Aftershock" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Spider Man</div>
+                    <div class="character-real-name">Peter Parker</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/marc.jpg" alt="Agatha Harkness" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Moon Knight</div>
+                    <div class="character-real-name">Marc Spector</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/quill.jpg" alt="Aged Genghis" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Star Lord</div>
+                    <div class="character-real-name">Peter Quill</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/gamora.jpg" alt="Agent" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Gamora</div>
+                    <div class="character-real-name">Gamora</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/drax.jpg" alt="Agent Mobius" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Drax</div>
+                    <div class="character-real-name">Drax</div>
+                </div>
+            </a>
+
+        </div>
+        <div class="character-grid">
+            
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/Logan.jpg" alt="Adaptoid" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Wolverine</div>
+                    <div class="character-real-name">Logan</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/lukecage1.jpg" alt="Administrator" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Luke Cage</div>
+                    <div class="character-real-name">Luke Cage</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/ironfist.jpg" alt="Adversary" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Iron Fist</div>
+                    <div class="character-real-name">Danny Rand</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/jessicajone.jpg" alt="Aegis" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Jessica Jones</div>
+                    <div class="character-real-name">Jessica Jones</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/daredevil1.jpg" alt="Aegis" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">DareDevil</div>
+                    <div class="character-real-name">Matthew Murdock</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/mephisto.jpg" alt="Aero" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Mephisto</div>
+                    <div class="character-real-name">Mephisto</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/galactus.jpg" alt="Aero" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Galactus</div>
+                    <div class="character-real-name">Galactus</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/deadpool.jpg" alt="Aftershock" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Deadpool</div>
+                    <div class="character-real-name">Wade Wilson</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/human touch.jpg" alt="Agatha Harkness" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Human Torch</div>
+                    <div class="character-real-name">Johnny Storm</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/the thing.jpg" alt="Aged Genghis" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">The Thing</div>
+                    <div class="character-real-name">Benjamin Grimm</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/Invincible.jpg" alt="Agent" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Invisible Woman</div>
+                    <div class="character-real-name">Susan Storm</div>
+                </div>
+            </a>
+
+            <a href="#" class="character-card">
+                <div class="image-wrapper">
+                    <img src="./BT logo/reed.jpg" alt="Agent Mobius" class="character-img">
+                </div>
+                <div class="card-info">
+                    <div class="character-name">Mr Fantastic</div>
+                    <div class="character-real-name">Reed Richard</div>
+                </div>
+            </a>
+
+        </div>
+       
+    </div>
+  <br><br>
+  <!-- 4. FOOTER -->
+  <footer class="main-footer">
+        <div class="footer-primary">
+            
+            <!-- Logo -->
+            <div class="footer-logo">
+                <!-- Replace with your actual logo graphic if needed -->
+                <svg width="85" height="85" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="100" fill="#e62429"/>
+                    <text x="50%" y="78%" font-family="Impact, Arial Black" font-size="90" fill="#ffffff" text-anchor="middle">M</text>
+                </svg>
+            </div>
+
+            <!-- Link Column 1 -->
+            <div class="footer-nav-col">
+                <a href="#">About Marvel</a>
+                <a href="#">Help/FAQs</a>
+                <a href="#">Careers</a>
+                <a href="#">Internships</a>
+            </div>
+
+            <!-- Link Column 2 -->
+            <div class="footer-nav-col">
+                <a href="#">Advertising</a>
+                <a href="#">Disney+</a>
+                <a href="#">Marvelhq.com</a>
+                <a href="#">Redeem Digital Comics</a>
+            </div>
+
+            <!-- Promo Features -->
+            <div class="footer-promos">
+                <!-- Marvel Unlimited -->
+                <div class="promo-item">
+                    <div class="promo-icon">
+                        <!-- Placeholder using SVG, replace src with your icon asset -->
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    </div>
+                    <div class="promo-text">
+                        <h4>Marvel Unlimited</h4>
+                        <p>Access Over 30,000+ Digital Comics</p>
+                    </div>
+                </div>
+                
+                <!-- Send a Gift -->
+                <div class="promo-item">
+                    <div class="promo-icon">
+                        <!-- Placeholder using SVG, replace src with your icon asset -->
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+                    </div>
+                    <div class="promo-text">
+                        <h4>Send A Gift</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media Grid -->
+            <div class="footer-socials">
+                <h4>Follow Marvel</h4>
+                <div class="social-grid">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Tumblr"><i class="fab fa-tumblr"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Snapchat"><i class="fab fa-snapchat-ghost"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Legal Links -->
+        <div class="footer-legal">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Interest-Based Ads</a>
+            <a href="#">License Agreement</a>
+            <span class="footer-copyright">©2026 MARVEL</span>
+        </div>
+    </footer>
+
+  <!-- Bootstrap 5 Bundle with Popper JS (Required for Carousel and Navbar toggle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
